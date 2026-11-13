@@ -1,0 +1,20 @@
+PROJETO STARLOG-ZERO
+
+1. Extraia a pasta StarLog-Zero do arquivo ZIP.
+2. Abra o VS Code.
+3. Clique em Arquivo > Abrir Pasta.
+4. Selecione a pasta StarLog-Zero que foi extraida.
+5. Abra Terminal > Novo Terminal.
+6. Execute o comando de compilacao:
+
+javac -encoding UTF-8 -d out src/br/com/starlog/model/*.java src/br/com/starlog/exception/*.java src/br/com/starlog/main/*.java
+
+7. Execute o programa:
+
+java -cp out br.com.starlog.main.MainResgate
+
+Resultado esperado: os quatro ataques devem apresentar SUCESSO.
+
+Observacao:
+Os arquivos Java estao dentro de src, organizados nos pacotes solicitados.
+Os arquivos compilados serao criados na pasta out.
